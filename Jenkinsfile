@@ -16,7 +16,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 dir('Backend') {
-                    bat 'docker build -t %IMAGE_NAME% .'
+                    bat 'docker build -t %food-backend% .'
                 }
             }
         }
